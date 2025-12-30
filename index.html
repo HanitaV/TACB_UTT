@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Practice - Ôn tập Tiếng Anh Cơ Bản</title>
+    <meta name="description" content="Website ôn tập tiếng Anh cơ bản với các dạng bài tập Reading, Grammar, Vocabulary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">English Practice</span>
+                </h1>
+                <p class="tagline">Ôn tập Tiếng Anh Cơ Bản</p>
+            </div>
+            
+            <!-- Progress Stats -->
+            <div class="stats-container" id="statsContainer">
+                <div class="stat-card">
+                    <span class="stat-label">Completed</span>
+                    <span class="stat-value" id="completedCount">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Accuracy</span>
+                    <span class="stat-value" id="accuracyRate">0%</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Streak</span>
+                    <span class="stat-value" id="streakCount">0🔥</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard/Home Screen -->
+        <div class="dashboard" id="dashboard">
+            <h2 class="section-title">Choose Question Type</h2>
+            <div class="question-types-grid" id="questionTypesGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="quiz-screen hidden" id="quizScreen">
+            <!-- Quiz Header -->
+            <div class="quiz-header">
+                <button class="back-btn" id="backBtn">
+                    <span>← Back</span>
+                </button>
+                <div class="quiz-info">
+                    <h3 class="quiz-title" id="quizTitle">Reading</h3>
+                    <p class="quiz-subtitle" id="quizSubtitle">Unit 1: All About Me</p>
+                </div>
+                <div class="progress-indicator">
+                    <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+                </div>
+            </div>
+
+            <!-- Question Content -->
+            <div class="question-container" id="questionContainer">
+                <div class="question-layout no-context" id="questionLayout">
+                    <!-- Left: Paragraph/Passage (if available) -->
+                    <div class="question-pane question-pane-left hidden" id="leftPane">
+                        <div class="context-box hidden" id="contextBox">
+                            <h4 class="context-title">Reading Passage</h4>
+                            <div class="context-content" id="contextContent"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Question -->
+                    <div class="question-pane question-pane-right" id="rightPane">
+                        <!-- Image (if applicable) -->
+                        <div class="question-image hidden" id="questionImage">
+                            <img src="" alt="Question image" id="imageElement">
+                        </div>
+
+                        <div class="question-box">
+                            <p class="question-text" id="questionText"></p>
+                            
+                            <!-- Answer Options -->
+                            <div class="answer-options" id="answerOptions"></div>
+                            
+                            <!-- Feedback -->
+                            <div class="feedback hidden" id="feedback">
+                                <div class="feedback-icon" id="feedbackIcon"></div>
+                                <p class="feedback-text" id="feedbackText"></p>
+                                <p class="feedback-explanation" id="feedbackExplanation"></p>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="question-actions">
+                                <button class="btn btn-secondary" id="hintBtn">💡 Hint</button>
+                                <button class="btn btn-primary" id="checkBtn">Check Answer</button>
+                                <button class="btn btn-primary hidden" id="nextBtn">Next Question →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="results-screen hidden" id="resultsScreen">
+            <div class="results-content">
+                <div class="results-icon" id="resultsIcon">🎉</div>
+                <h2 class="results-title" id="resultsTitle">Great Job!</h2>
+                <div class="results-stats">
+                    <div class="result-stat">
+                        <span class="result-label">Score</span>
+                        <span class="result-value" id="finalScore">0/0</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-label">Percentage</span>
+                        <span class="result-value" id="finalPercentage">0%</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-label">Time</span>
+                        <span class="result-value" id="finalTime">0s</span>
+                    </div>
+                </div>
+                <div class="results-actions">
+                    <button class="btn btn-secondary" id="reviewBtn">📝 Review Answers</button>
+                    <button class="btn btn-primary" id="retryBtn">🔄 Try Again</button>
+                    <button class="btn btn-primary" id="homeBtn">🏠 Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas (for celebration) -->
+    <canvas id="confetti"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
