@@ -1,549 +1,995 @@
 {
-    "questionTypes": [
+  "questionTypes": [
+    {
+      "id": "reading",
+      "name": "Reading (Đọc hiểu)",
+      "icon": "📖",
+      "description": "Reading comprehension, skimming, scanning, matching",
+      "color": "#4F46E5",
+      "questionGroups": [
         {
-            "id": "reading",
-            "name": "Reading (Đọc hiểu)",
-            "icon": "📖",
-            "description": "Reading comprehension, skimming, scanning, matching",
-            "color": "#4F46E5",
-            "questionGroups": [
-                {
-                    "id": "u1_reading_forum",
-                    "unit": "Unit 1: All About Me",
-                    "title": "Online Cooking Course Forum",
-                    "context": "Welcome to week one of the online cooking course. Please introduce yourself to the group and tell us why you're doing the course. (Sept 9th 08:20)\n\n**Maria:** My name is Maria and I'm a hotel manager. I'm from Brazil, but I live in Scotland. I'm doing this course because my daughter and I love cooking. We're doing it together, I suppose! Her name is Sophia. She's eight, has lots of energy and makes me laugh. She loves playing football, and baking cakes and biscuits. I love meeting new people, listening to music and spending time with Sophia.\n\n**Derek:** I'm Derek. I live in Rincon del Mar, Colombia and I'm retired. I'm not working any more. My job is to relax and enjoy myself. I love cooking, dancing and keeping fit. I live near a beach and I often go running, swimming or sailing there. I have a big family. At the weekend, I always cook a big dinner for them. I like seeing them smile. I'm doing this course because I'm looking for new ideas!\n\n**Anh:** I'm Anh and I'm a nurse. I live in Hue, in Vietnam. I live with my parents and my grandparents. My hobbies are reading, drawing and talking to my friends online. My favourite food is beef Pho. It's a Vietnamese noodle dish. It's delicious. On holidays, I like to visit different cities. I love shopping, especially for shoes! Bangkok is my favourite city for shopping! I can't cook, but I want to do this course to learn!\n\n**Anusha:** I'm Anusha and I love climbing. I try to climb every day to stay strong. I really enjoy climbing because I can do it with my friends. After climbing, we go to a café for coffee or to the cinema. I'm a student in Singapore at the moment, but I'm from Malaysia. I'm studying computer science. In the future, I want to make my own social media website or app. But for now, I need to learn how to cook!",
-                    "hasImages": true,
-                    "questions": [
-                        {
-                            "id": "u1_r1_q1",
-                            "question": "Photo a shows:",
-                            "type": "multiple-choice",
-                            "hasImage": true,
-                            "imagePath": "assets/1/1-a.png",
-                            "options": [
-                                "Maria",
-                                "Derek",
-                                "Anh",
-                                "Anusha"
-                            ],
-                            "answer": "Anusha",
-                            "explanation": "Photo a shows someone climbing, which matches Anusha's description."
-                        },
-                        {
-                            "id": "u1_r1_q2",
-                            "question": "Photo b shows:",
-                            "type": "multiple-choice",
-                            "hasImage": true,
-                            "imagePath": "assets/1/1-b.png",
-                            "options": [
-                                "Maria",
-                                "Derek",
-                                "Anh",
-                                "Anusha"
-                            ],
-                            "answer": "Anh",
-                            "explanation": "Photo b matches Anh's description."
-                        },
-                        {
-                            "id": "u1_r1_q3",
-                            "question": "Photo c shows:",
-                            "type": "multiple-choice",
-                            "hasImage": true,
-                            "imagePath": "assets/1/1-c.png",
-                            "options": [
-                                "Maria",
-                                "Derek",
-                                "Anh",
-                                "Anusha"
-                            ],
-                            "answer": "Maria",
-                            "explanation": "Photo c shows family/mother-daughter scene, matching Maria."
-                        },
-                        {
-                            "id": "u1_r1_q4",
-                            "question": "Photo d shows:",
-                            "type": "multiple-choice",
-                            "hasImage": true,
-                            "imagePath": "assets/1/1-d.png",
-                            "options": [
-                                "Maria",
-                                "Derek",
-                                "Anh",
-                                "Anusha"
-                            ],
-                            "answer": "Derek",
-                            "explanation": "Photo d shows someone at the beach, matching Derek."
-                        },
-                        {
-                            "id": "u1_r2_q1",
-                            "question": "________ lives by the sea.",
-                            "type": "fill-in",
-                            "answer": "Derek",
-                            "explanation": "Derek says 'I live near a beach'."
-                        },
-                        {
-                            "id": "u1_r2_q2",
-                            "question": "________ talks about food from their country.",
-                            "type": "fill-in",
-                            "answer": "Anh",
-                            "explanation": "Anh mentions beef Pho, a Vietnamese dish."
-                        },
-                        {
-                            "id": "u1_r2_q3",
-                            "question": "________ studies computing.",
-                            "type": "fill-in",
-                            "answer": "Anusha",
-                            "explanation": "Anusha is studying computer science."
-                        },
-                        {
-                            "id": "u1_r2_q4",
-                            "question": "________ and ________ like sports.",
-                            "type": "fill-in",
-                            "answer": "Derek, Anusha",
-                            "explanation": "Derek does running/swimming/sailing, Anusha does climbing."
-                        },
-                        {
-                            "id": "u1_r2_q5",
-                            "question": "________ likes meeting people.",
-                            "type": "fill-in",
-                            "answer": "Maria",
-                            "explanation": "Maria says 'I love meeting new people'."
-                        },
-                        {
-                            "id": "u1_r2_q6",
-                            "question": "________ and ________ can't cook.",
-                            "type": "fill-in",
-                            "answer": "Anh, Anusha",
-                            "explanation": "Both Anh and Anusha mention they need to learn to cook."
-                        },
-                        {
-                            "id": "u1_r3_q1",
-                            "question": "What is the main purpose of the posts?",
-                            "type": "multiple-choice",
-                            "options": [
-                                "to give information about a course",
-                                "to introduce themselves to other people",
-                                "to review a cooking course"
-                            ],
-                            "answer": "to introduce themselves to other people",
-                            "explanation": "The posts are introductions at the start of the course."
-                        }
-                    ]
-                },
-                {
-                    "id": "u2_reading_memory",
-                    "unit": "Unit 2: Memory",
-                    "title": "Memory Palace",
-                    "context": "Remember everything with a memory palace!\n\nDo you need to remember long lists of information? Do you often forget what to buy at the shops? Try using a memory palace. A memory palace is a way to remember things by closing your eyes and trying to see them in your mind.\n\nAnthony Metivier, a memory palace expert and trainer, uses this method to remember almost everything. He has lots of books and videos about it.\n\n**Step 1:** Choose a place that you know well, for example, your bedroom. Imagine that you're in that place. Walk around and stop at important places and objects. This helps you to see the room clearly.\n\n**Step 2:** Select the information that you need to remember. Close your eyes and think about the first place or object in your room. Add a piece of information to the object. For example, to remember birthdays, you could add three candles to show the 3rd or a calendar with July.\n\n**Step 3:** Move to the next object in your memory palace to add the next piece of information. For example, another birthday.\n\n**Step 4:** Repeat steps 2 and 3 until you add everything you need to remember.\n\n**Step 5:** Draw a picture of your memory palace or write a description of it.\n\n**Step 6:** Visit your memory palace often.\n\n**Step 7:** Make another memory palace for other information that you need to remember.",
-                    "questions": [
-                        {
-                            "id": "u2_r1_q1",
-                            "question": "What is a memory palace?",
-                            "type": "multiple-choice",
-                            "options": [
-                                "An expensive way to remember things.",
-                                "A way to remember things by seeing them in your mind.",
-                                "A way to use pictures to help you remember things."
-                            ],
-                            "answer": "A way to remember things by seeing them in your mind.",
-                            "explanation": "The text defines a memory palace as a method where you close your eyes and see things in your mind."
-                        },
-                        {
-                            "id": "u2_r3_q1",
-                            "question": "Find a synonym for 'brain':",
-                            "type": "fill-in",
-                            "answer": "mind",
-                            "explanation": "The word 'mind' appears in the text as a synonym for brain."
-                        },
-                        {
-                            "id": "u2_r3_q2",
-                            "question": "Find a synonym for 'things':",
-                            "type": "fill-in",
-                            "answer": "objects",
-                            "explanation": "The text uses 'objects' to refer to things in your room."
-                        },
-                        {
-                            "id": "u2_r3_q3",
-                            "question": "Find a synonym for 'choose':",
-                            "type": "fill-in",
-                            "answer": "select",
-                            "explanation": "Step 2 uses 'Select the information' meaning choose."
-                        },
-                        {
-                            "id": "u2_r3_q4",
-                            "question": "Find a synonym for 'picture':",
-                            "type": "fill-in",
-                            "answer": "drawing",
-                            "explanation": "Step 5 mentions 'Draw a picture' - drawing is the synonym."
-                        }
-                    ]
-                },
-                {
-                    "id": "u3_reading_food",
-                    "unit": "Unit 3: Food for Thought",
-                    "title": "Saving Food - Blog Post",
-                    "context": "**Saving Food**\n\nAs you know, I read a lot about food and recently I learned that one third of all the food in the world becomes food waste every year. I read a little more and found that there are eight billion people on the planet, but about 700 million are hungry... This is what I found.\n\nSadly, much of the food we don't eat goes in the bin, then on to a rubbish dump. The UN Environment Programme found that this happens to 900 million tonnes of food each year; that's 23 million lorries of food!\n\nI did find a few good news stories, though. In some places, companies use food waste to feed animals, make electricity or power cars. I didn't know until now that one large burger restaurant actually uses their old oil, not petrol, in their lorries!\n\nSometimes, these big world problems make you feel like there's nothing you can do... One of the easiest things I found was an app that tells you about free food in the local area...",
-                    "questions": [
-                        {
-                            "id": "u3_r1_q1",
-                            "question": "What problem with food does the blog post mention?",
-                            "type": "multiple-choice",
-                            "options": [
-                                "food waste",
-                                "the cost of food",
-                                "unhealthy food"
-                            ],
-                            "answer": "food waste",
-                            "explanation": "The blog focuses on food waste as the main problem."
-                        },
-                        {
-                            "id": "u3_r3_q1",
-                            "question": "True or False: 700 million people live on the planet.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "True",
-                                "False"
-                            ],
-                            "answer": "False",
-                            "explanation": "700 million people are hungry, not the total population. 8 billion people live on the planet."
-                        },
-                        {
-                            "id": "u3_r3_q2",
-                            "question": "True or False: 23 million tonnes of food goes in the bin every year.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "True",
-                                "False"
-                            ],
-                            "answer": "False",
-                            "explanation": "900 million tonnes go in the bin. 23 million is the number of lorries."
-                        },
-                        {
-                            "id": "u3_r3_q3",
-                            "question": "True or False: There is more food waste than plastic waste in America.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "True",
-                                "False"
-                            ],
-                            "answer": "True",
-                            "explanation": "This is mentioned in the text (checking answer key)."
-                        }
-                    ]
-                },
-                {
-                    "id": "u4_reading_mindset",
-                    "unit": "Unit 4: Goals and Ambition",
-                    "title": "The Effect of Mindset on Success",
-                    "context": "**[A] The Brain is Always Changing**\nScience tells us that the human brain is always changing. As we get older, we learn new information and skills.\n\n**[B] Growth Mindset**\nMindset is how a person thinks or feels about things. People with growth mindsets believe that they can memorize new information and learn new skills.\n\n**[C] Fixed Mindset**\nOn the other hand, people with fixed mindsets don't believe that everyone can learn new things. They think some people are naturally good at things and others aren't.\n\n**[D] Research by Dr Carol Dweck**\nThe psychologist behind the idea of growth and fixed mindsets is Dr Carol Dweck, from Stanford University.\n\n**[E] Mindsets Can Change**\nDr Dweck also found that mindsets can change. With work, people can change the way they think about their abilities.",
-                    "questions": [
-                        {
-                            "id": "u4_r2_q1",
-                            "question": "The ________ changes as people get older and learn new things.",
-                            "type": "fill-in",
-                            "answer": "brain",
-                            "explanation": "Paragraph A states the brain is always changing."
-                        },
-                        {
-                            "id": "u4_r2_q2",
-                            "question": "A ________ mindset is when people think they can learn new things.",
-                            "type": "fill-in",
-                            "answer": "growth",
-                            "explanation": "Paragraph B defines growth mindset."
-                        },
-                        {
-                            "id": "u4_r2_q5",
-                            "question": "Who researched mindsets?",
-                            "type": "fill-in",
-                            "answer": "Dr Carol Dweck",
-                            "explanation": "Paragraph D mentions Dr Carol Dweck from Stanford University."
-                        }
-                    ]
-                },
-                {
-                    "id": "u5_reading_emails",
-                    "unit": "Unit 5: Home and Away",
-                    "title": "Kaz and Jenny's Emails",
-                    "context": "**Email from Kaz:**\nHi Jenny, How are you? I miss you! Tell me all your news! It's cold and dark here. I think this is the coldest winter for years... But it's OK – staying home is brilliant when it's horrible outside. You know me, I love sitting under a blanket and reading a good book! I still use that blanket you made me. It's so soft and comfortable. Lots of love, Kaz\n\n**Email from Jenny:**\nHi Kaz, Thanks for your email. It's great to hear from you. Your house looks lovely and warm. Sorry to hear the weather is dreadful. It's the opposite here. My neighbour says this is the hottest summer in a long time! I need to sleep with the fan on... I really love my new flat, though. It's beautiful. It has the most incredible view of the park and nothing is better than green tea! Love, Jenny",
-                    "questions": [
-                        {
-                            "id": "u5_r2_q1",
-                            "question": "Kaz thinks the weather is ________ where she lives.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "good",
-                                "bad"
-                            ],
-                            "answer": "bad",
-                            "explanation": "Kaz says it's cold, dark, and horrible outside."
-                        },
-                        {
-                            "id": "u5_r2_q2",
-                            "question": "Kaz ________ staying home in winter.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "likes",
-                                "doesn't like"
-                            ],
-                            "answer": "likes",
-                            "explanation": "Kaz says 'staying home is brilliant when it's horrible outside'."
-                        },
-                        {
-                            "id": "u5_r2_q4",
-                            "question": "Jenny's neighbour thinks it's ________ hot.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "a little",
-                                "very"
-                            ],
-                            "answer": "very",
-                            "explanation": "The neighbour says it's the hottest summer in a long time."
-                        },
-                        {
-                            "id": "u5_r2_q6",
-                            "question": "Jenny ________ the views from her flat.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "loves",
-                                "hates"
-                            ],
-                            "answer": "loves",
-                            "explanation": "Jenny says it has 'the most incredible view'."
-                        }
-                    ]
-                }
-            ]
+          "id": "u1_reading_forum",
+          "unit": "Unit 1: All About Me",
+          "title": "Online Cooking Course Forum",
+          "context": "Welcome to week one of the online cooking course. Please introduce yourself to the group and tell us why you're doing the course. (Sept 9th 08:20)\n\n**Maria:** My name is Maria and I'm a hotel manager. I'm from Brazil, but I live in Scotland. I'm doing this course because my daughter and I love cooking. We're doing it together, I suppose! Her name is Sophia. She's eight, has lots of energy and makes me laugh. She loves playing football, and baking cakes and biscuits. I love meeting new people, listening to music and spending time with Sophia.\n\n**Derek:** I'm Derek. I live in Rincon del Mar, Colombia and I'm retired. I'm not working any more. My job is to relax and enjoy myself. I love cooking, dancing and keeping fit. I live near a beach and I often go running, swimming or sailing there. I have a big family. At the weekend, I always cook a big dinner for them. I like seeing them smile. I'm doing this course because I'm looking for new ideas!\n\n**Anh:** I'm Anh and I'm a nurse. I live in Hue, in Vietnam. I live with my parents and my grandparents. My hobbies are reading, drawing and talking to my friends online. My favourite food is beef Pho. It's a Vietnamese noodle dish. It's delicious. On holidays, I like to visit different cities. I love shopping, especially for shoes! Bangkok is my favourite city for shopping! I can't cook, but I want to do this course to learn!\n\n**Anusha:** I'm Anusha and I love climbing. I try to climb every day to stay strong. I really enjoy climbing because I can do it with my friends. After climbing, we go to a café for coffee or to the cinema. I'm a student in Singapore at the moment, but I'm from Malaysia. I'm studying computer science. In the future, I want to make my own social media website or app. But for now, I need to learn how to cook!",
+          "hasImages": true,
+          "questions": [
+            {
+              "id": "u1_r1_q1",
+              "question": "Photo a shows:",
+              "type": "multiple-choice",
+              "hasImage": true,
+              "imagePath": "assets/1/1-a.png",
+              "options": [
+                "Maria",
+                "Derek",
+                "Anh",
+                "Anusha"
+              ],
+              "answer": "Anusha",
+              "explanation": "Photo a shows someone climbing, which matches Anusha's description."
+            },
+            {
+              "id": "u1_r1_q2",
+              "question": "Photo b shows:",
+              "type": "multiple-choice",
+              "hasImage": true,
+              "imagePath": "assets/1/1-b.png",
+              "options": [
+                "Maria",
+                "Derek",
+                "Anh",
+                "Anusha"
+              ],
+              "answer": "Anh",
+              "explanation": "Photo b matches Anh's description."
+            },
+            {
+              "id": "u1_r1_q3",
+              "question": "Photo c shows:",
+              "type": "multiple-choice",
+              "hasImage": true,
+              "imagePath": "assets/1/1-c.png",
+              "options": [
+                "Maria",
+                "Derek",
+                "Anh",
+                "Anusha"
+              ],
+              "answer": "Maria",
+              "explanation": "Photo c shows family/mother-daughter scene, matching Maria."
+            },
+            {
+              "id": "u1_r1_q4",
+              "question": "Photo d shows:",
+              "type": "multiple-choice",
+              "hasImage": true,
+              "imagePath": "assets/1/1-d.png",
+              "options": [
+                "Maria",
+                "Derek",
+                "Anh",
+                "Anusha"
+              ],
+              "answer": "Derek",
+              "explanation": "Photo d shows someone at the beach, matching Derek."
+            },
+            {
+              "id": "u1_r2_q1",
+              "question": "________ lives by the sea.",
+              "type": "fill-in",
+              "answer": "Derek",
+              "explanation": "Derek says 'I live near a beach'."
+            },
+            {
+              "id": "u1_r2_q2",
+              "question": "________ talks about food from their country.",
+              "type": "fill-in",
+              "answer": "Anh",
+              "explanation": "Anh mentions beef Pho, a Vietnamese dish."
+            },
+            {
+              "id": "u1_r2_q3",
+              "question": "________ studies computing.",
+              "type": "fill-in",
+              "answer": "Anusha",
+              "explanation": "Anusha is studying computer science."
+            },
+            {
+              "id": "u1_r2_q4",
+              "question": "________ and ________ like sports.",
+              "type": "fill-in",
+              "answer": "Derek, Anusha",
+              "explanation": "Derek does running/swimming/sailing, Anusha does climbing."
+            },
+            {
+              "id": "u1_r2_q5",
+              "question": "________ likes meeting people.",
+              "type": "fill-in",
+              "answer": "Maria",
+              "explanation": "Maria says 'I love meeting new people'."
+            },
+            {
+              "id": "u1_r2_q6",
+              "question": "________ and ________ can't cook.",
+              "type": "fill-in",
+              "answer": "Anh, Anusha",
+              "explanation": "Both Anh and Anusha mention they need to learn to cook."
+            },
+            {
+              "id": "u1_r3_q1",
+              "question": "What is the main purpose of the posts?",
+              "type": "multiple-choice",
+              "options": [
+                "to give information about a course",
+                "to introduce themselves to other people",
+                "to review a cooking course"
+              ],
+              "answer": "to introduce themselves to other people",
+              "explanation": "The posts are introductions at the start of the course."
+            }
+          ]
         },
         {
-            "id": "grammar",
-            "name": "Grammar (Ngữ pháp)",
-            "icon": "📝",
-            "description": "Tenses, adverbs, conditionals, and sentence structures",
-            "color": "#7C3AED",
-            "questionGroups": [
-                {
-                    "id": "u1_grammar_present",
-                    "unit": "Unit 1: All About Me",
-                    "title": "Present Simple and Present Continuous",
-                    "instructions": "Choose the correct option to complete the sentences.",
-                    "questions": [
-                        {
-                            "id": "u1_g1_q1",
-                            "question": "I ________ coffee in the morning.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "rarely drink",
-                                "I'm rarely drinking"
-                            ],
-                            "answer": "rarely drink",
-                            "explanation": "Use present simple for habits."
-                        },
-                        {
-                            "id": "u1_g1_q2",
-                            "question": "________ confident?",
-                            "type": "multiple-choice",
-                            "options": [
-                                "Are you usually feeling",
-                                "Do you usually feel"
-                            ],
-                            "answer": "Do you usually feel",
-                            "explanation": "Use present simple for general feelings with 'usually'."
-                        },
-                        {
-                            "id": "u1_g1_q3",
-                            "question": "Rekha ________ her holiday in Honduras at the moment.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "'s enjoying",
-                                "enjoys"
-                            ],
-                            "answer": "'s enjoying",
-                            "explanation": "Use present continuous for actions happening now ('at the moment')."
-                        },
-                        {
-                            "id": "u1_g1_q4",
-                            "question": "Manoj ________ to the gym four or five times a week.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "goes",
-                                "is going"
-                            ],
-                            "answer": "goes",
-                            "explanation": "Use present simple for regular routines."
-                        },
-                        {
-                            "id": "u1_g1_q6",
-                            "question": "________. Look out the window. It's really snowing!",
-                            "type": "multiple-choice",
-                            "options": [
-                                "I'm not joking",
-                                "I don't joke"
-                            ],
-                            "answer": "I'm not joking",
-                            "explanation": "Use present continuous for what's happening right now."
-                        }
-                    ]
-                },
-                {
-                    "id": "u5_grammar_conditionals",
-                    "unit": "Unit 5: Home and Away",
-                    "title": "Zero and First Conditionals",
-                    "instructions": "Choose the correct option.",
-                    "questions": [
-                        {
-                            "id": "u5_g3_q1",
-                            "question": "If she tidies the house, I'll ________ dinner.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "cook",
-                                "cooks"
-                            ],
-                            "answer": "cook",
-                            "explanation": "First conditional: If + present simple, will + base verb."
-                        },
-                        {
-                            "id": "u5_g3_q2",
-                            "question": "If your desk ________ organized, it'll be easier to study.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "is",
-                                "be"
-                            ],
-                            "answer": "is",
-                            "explanation": "First conditional uses present simple in the if-clause."
-                        },
-                        {
-                            "id": "u5_g3_q3",
-                            "question": "We'll complain if the air conditioning ________.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "doesn't work",
-                                "not work"
-                            ],
-                            "answer": "doesn't work",
-                            "explanation": "Use present simple (doesn't work) in the if-clause."
-                        }
-                    ]
-                }
-            ]
+          "id": "u2_reading_memory",
+          "unit": "Unit 2: Memory",
+          "title": "Memory Palace",
+          "context": "Remember everything with a memory palace!\n\nDo you need to remember long lists of information? Do you often forget what to buy at the shops? Try using a memory palace. A memory palace is a way to remember things by closing your eyes and trying to see them in your mind.\n\nAnthony Metivier, a memory palace expert and trainer, uses this method to remember almost everything. He has lots of books and videos about it.\n\n**Step 1:** Choose a place that you know well, for example, your bedroom. Imagine that you're in that place. Walk around and stop at important places and objects. This helps you to see the room clearly.\n\n**Step 2:** Select the information that you need to remember. Close your eyes and think about the first place or object in your room. Add a piece of information to the object. For example, to remember birthdays, you could add three candles to show the 3rd or a calendar with July.\n\n**Step 3:** Move to the next object in your memory palace to add the next piece of information. For example, another birthday.\n\n**Step 4:** Repeat steps 2 and 3 until you add everything you need to remember.\n\n**Step 5:** Draw a picture of your memory palace or write a description of it.\n\n**Step 6:** Visit your memory palace often.\n\n**Step 7:** Make another memory palace for other information that you need to remember.",
+          "questions": [
+            {
+              "id": "u2_r1_q1",
+              "question": "What is a memory palace?",
+              "type": "multiple-choice",
+              "options": [
+                "An expensive way to remember things.",
+                "A way to remember things by seeing them in your mind.",
+                "A way to use pictures to help you remember things."
+              ],
+              "answer": "A way to remember things by seeing them in your mind.",
+              "explanation": "The text defines a memory palace as a method where you close your eyes and see things in your mind."
+            },
+            {
+              "id": "u2_r3_q1",
+              "question": "Find a synonym for 'brain':",
+              "type": "fill-in",
+              "answer": "mind",
+              "explanation": "The word 'mind' appears in the text as a synonym for brain."
+            },
+            {
+              "id": "u2_r3_q2",
+              "question": "Find a synonym for 'things':",
+              "type": "fill-in",
+              "answer": "objects",
+              "explanation": "The text uses 'objects' to refer to things in your room."
+            },
+            {
+              "id": "u2_r3_q3",
+              "question": "Find a synonym for 'choose':",
+              "type": "fill-in",
+              "answer": "select",
+              "explanation": "Step 2 uses 'Select the information' meaning choose."
+            },
+            {
+              "id": "u2_r3_q4",
+              "question": "Find a synonym for 'picture':",
+              "type": "fill-in",
+              "answer": "drawing",
+              "explanation": "Step 5 mentions 'Draw a picture' - drawing is the synonym."
+            }
+          ]
         },
         {
-            "id": "vocabulary",
-            "name": "Vocabulary (Từ vựng)",
-            "icon": "💬",
-            "description": "Word definitions, topics, and usage",
-            "color": "#10B981",
-            "questionGroups": [
-                {
-                    "id": "u1_vocab_personality",
-                    "unit": "Unit 1: All About Me",
-                    "title": "Personality Adjectives",
-                    "questions": [
-                        {
-                            "id": "u1_v1_q1",
-                            "question": "A person who you can trust is ________.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "reliable",
-                                "creative",
-                                "patient",
-                                "honest"
-                            ],
-                            "answer": "reliable",
-                            "explanation": "Reliable means someone you can trust and depend on."
-                        },
-                        {
-                            "id": "u1_v1_q2",
-                            "question": "A person who doesn't smile or laugh a lot is ________.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "serious",
-                                "friendly",
-                                "confident",
-                                "patient"
-                            ],
-                            "answer": "serious",
-                            "explanation": "Serious people are often more formal and less playful."
-                        },
-                        {
-                            "id": "u1_v1_q3",
-                            "question": "A person who believes in themselves is ________.",
-                            "type": "multiple-choice",
-                            "options": [
-                                "confident",
-                                "honest",
-                                "creative",
-                                "friendly"
-                            ],
-                            "answer": "confident",
-                            "explanation": "Confident means having belief in your own abilities."
-                        }
-                    ]
-                },
-                {
-                    "id": "u5_vocab_extreme",
-                    "unit": "Unit 5: Home and Away",
-                    "title": "Extreme Adjectives",
-                    "instructions": "Look at the images and complete the phrases with the correct extreme adjective.",
-                    "hasImages": true,
-                    "questions": [
-                        {
-                            "id": "u5_v1_q1",
-                            "question": "a(n) ________ sunset",
-                            "type": "fill-in",
-                            "hasImage": true,
-                            "imagePath": "assets/14/14-1.png",
-                            "answer": "spectacular",
-                            "explanation": "Spectacular means extremely beautiful or impressive."
-                        },
-                        {
-                            "id": "u5_v1_q2",
-                            "question": "a(n) ________ view",
-                            "type": "fill-in",
-                            "hasImage": true,
-                            "imagePath": "assets/14/14-2.png",
-                            "answer": "awful",
-                            "explanation": "Awful means very bad or unpleasant."
-                        },
-                        {
-                            "id": "u5_v1_q3",
-                            "question": "a(n) ________ floor",
-                            "type": "fill-in",
-                            "hasImage": true,
-                            "imagePath": "assets/14/14-3.png",
-                            "answer": "filthy",
-                            "explanation": "Filthy means extremely dirty."
-                        },
-                        {
-                            "id": "u5_v1_q4",
-                            "question": "a(n) ________ window",
-                            "type": "fill-in",
-                            "hasImage": true,
-                            "imagePath": "assets/14/14-4.png",
-                            "answer": "tiny",
-                            "explanation": "Tiny means extremely small."
-                        },
-                        {
-                            "id": "u5_v1_q5",
-                            "question": "a(n) ________ room",
-                            "type": "fill-in",
-                            "hasImage": true,
-                            "imagePath": "assets/14/14-5.png",
-                            "answer": "freezing",
-                            "explanation": "Freezing means extremely cold."
-                        },
-                        {
-                            "id": "u5_v1_q6",
-                            "question": "a(n) ________ smell",
-                            "type": "fill-in",
-                            "hasImage": true,
-                            "imagePath": "assets/14/14-6.png",
-                            "answer": "disgusting",
-                            "explanation": "Disgusting means extremely unpleasant or offensive."
-                        }
-                    ]
-                }
-            ]
+          "id": "u3_reading_food",
+          "unit": "Unit 3: Food for Thought",
+          "title": "Saving Food - Blog Post",
+          "context": "**Saving Food**\n\nAs you know, I read a lot about food and recently I learned that one third of all the food in the world becomes food waste every year. I read a little more and found that there are eight billion people on the planet, but about 700 million are hungry... This is what I found.\n\nSadly, much of the food we don't eat goes in the bin, then on to a rubbish dump. The UN Environment Programme found that this happens to 900 million tonnes of food each year; that's 23 million lorries of food!\n\nI did find a few good news stories, though. In some places, companies use food waste to feed animals, make electricity or power cars. I didn't know until now that one large burger restaurant actually uses their old oil, not petrol, in their lorries!\n\nSometimes, these big world problems make you feel like there's nothing you can do... One of the easiest things I found was an app that tells you about free food in the local area...",
+          "questions": [
+            {
+              "id": "u3_r1_q1",
+              "question": "What problem with food does the blog post mention?",
+              "type": "multiple-choice",
+              "options": [
+                "food waste",
+                "the cost of food",
+                "unhealthy food"
+              ],
+              "answer": "food waste",
+              "explanation": "The blog focuses on food waste as the main problem."
+            },
+            {
+              "id": "u3_r3_q1",
+              "question": "True or False: 700 million people live on the planet.",
+              "type": "multiple-choice",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "False",
+              "explanation": "700 million people are hungry, not the total population. 8 billion people live on the planet."
+            },
+            {
+              "id": "u3_r3_q2",
+              "question": "True or False: 23 million tonnes of food goes in the bin every year.",
+              "type": "multiple-choice",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "False",
+              "explanation": "900 million tonnes go in the bin. 23 million is the number of lorries."
+            },
+            {
+              "id": "u3_r3_q3",
+              "question": "True or False: There is more food waste than plastic waste in America.",
+              "type": "multiple-choice",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "True",
+              "explanation": "This is mentioned in the text (checking answer key)."
+            }
+          ]
+        },
+        {
+          "id": "u4_reading_mindset",
+          "unit": "Unit 4: Goals and Ambition",
+          "title": "The Effect of Mindset on Success",
+          "context": "**[A] The Brain is Always Changing**\nScience tells us that the human brain is always changing. As we get older, we learn new information and skills.\n\n**[B] Growth Mindset**\nMindset is how a person thinks or feels about things. People with growth mindsets believe that they can memorize new information and learn new skills.\n\n**[C] Fixed Mindset**\nOn the other hand, people with fixed mindsets don't believe that everyone can learn new things. They think some people are naturally good at things and others aren't.\n\n**[D] Research by Dr Carol Dweck**\nThe psychologist behind the idea of growth and fixed mindsets is Dr Carol Dweck, from Stanford University.\n\n**[E] Mindsets Can Change**\nDr Dweck also found that mindsets can change. With work, people can change the way they think about their abilities.",
+          "questions": [
+            {
+              "id": "u4_r2_q1",
+              "question": "The ________ changes as people get older and learn new things.",
+              "type": "fill-in",
+              "answer": "brain",
+              "explanation": "Paragraph A states the brain is always changing."
+            },
+            {
+              "id": "u4_r2_q2",
+              "question": "A ________ mindset is when people think they can learn new things.",
+              "type": "fill-in",
+              "answer": "growth",
+              "explanation": "Paragraph B defines growth mindset."
+            },
+            {
+              "id": "u4_r2_q5",
+              "question": "Who researched mindsets?",
+              "type": "fill-in",
+              "answer": "Dr Carol Dweck",
+              "explanation": "Paragraph D mentions Dr Carol Dweck from Stanford University."
+            }
+          ]
+        },
+        {
+          "id": "u5_reading_emails",
+          "unit": "Unit 5: Home and Away",
+          "title": "Kaz and Jenny's Emails",
+          "context": "**Email from Kaz:**\nHi Jenny, How are you? I miss you! Tell me all your news! It's cold and dark here. I think this is the coldest winter for years... But it's OK – staying home is brilliant when it's horrible outside. You know me, I love sitting under a blanket and reading a good book! I still use that blanket you made me. It's so soft and comfortable. Lots of love, Kaz\n\n**Email from Jenny:**\nHi Kaz, Thanks for your email. It's great to hear from you. Your house looks lovely and warm. Sorry to hear the weather is dreadful. It's the opposite here. My neighbour says this is the hottest summer in a long time! I need to sleep with the fan on... I really love my new flat, though. It's beautiful. It has the most incredible view of the park and nothing is better than green tea! Love, Jenny",
+          "questions": [
+            {
+              "id": "u5_r2_q1",
+              "question": "Kaz thinks the weather is ________ where she lives.",
+              "type": "multiple-choice",
+              "options": [
+                "good",
+                "bad"
+              ],
+              "answer": "bad",
+              "explanation": "Kaz says it's cold, dark, and horrible outside."
+            },
+            {
+              "id": "u5_r2_q2",
+              "question": "Kaz ________ staying home in winter.",
+              "type": "multiple-choice",
+              "options": [
+                "likes",
+                "doesn't like"
+              ],
+              "answer": "likes",
+              "explanation": "Kaz says 'staying home is brilliant when it's horrible outside'."
+            },
+            {
+              "id": "u5_r2_q4",
+              "question": "Jenny's neighbour thinks it's ________ hot.",
+              "type": "multiple-choice",
+              "options": [
+                "a little",
+                "very"
+              ],
+              "answer": "very",
+              "explanation": "The neighbour says it's the hottest summer in a long time."
+            },
+            {
+              "id": "u5_r2_q6",
+              "question": "Jenny ________ the views from her flat.",
+              "type": "multiple-choice",
+              "options": [
+                "loves",
+                "hates"
+              ],
+              "answer": "loves",
+              "explanation": "Jenny says it has 'the most incredible view'."
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "grammar",
+      "name": "Grammar (Ngữ pháp)",
+      "icon": "📝",
+      "description": "Tenses, adverbs, conditionals, and sentence structures",
+      "color": "#7C3AED",
+      "questionGroups": [
+        {
+          "id": "u1_grammar_present",
+          "unit": "Unit 1: All About Me",
+          "title": "Present Simple and Present Continuous",
+          "instructions": "Choose the correct option to complete the sentences.",
+          "questions": [
+            {
+              "id": "u1_g1_q1",
+              "question": "I ________ coffee in the morning.",
+              "type": "multiple-choice",
+              "options": [
+                "rarely drink",
+                "I'm rarely drinking"
+              ],
+              "answer": "rarely drink",
+              "explanation": "Use present simple for habits."
+            },
+            {
+              "id": "u1_g1_q2",
+              "question": "________ confident?",
+              "type": "multiple-choice",
+              "options": [
+                "Are you usually feeling",
+                "Do you usually feel"
+              ],
+              "answer": "Do you usually feel",
+              "explanation": "Use present simple for general feelings with 'usually'."
+            },
+            {
+              "id": "u1_g1_q3",
+              "question": "Rekha ________ her holiday in Honduras at the moment.",
+              "type": "multiple-choice",
+              "options": [
+                "'s enjoying",
+                "enjoys"
+              ],
+              "answer": "'s enjoying",
+              "explanation": "Use present continuous for actions happening now ('at the moment')."
+            },
+            {
+              "id": "u1_g1_q4",
+              "question": "Manoj ________ to the gym four or five times a week.",
+              "type": "multiple-choice",
+              "options": [
+                "goes",
+                "is going"
+              ],
+              "answer": "goes",
+              "explanation": "Use present simple for regular routines."
+            },
+            {
+              "id": "u1_g1_q6",
+              "question": "________. Look out the window. It's really snowing!",
+              "type": "multiple-choice",
+              "options": [
+                "I'm not joking",
+                "I don't joke"
+              ],
+              "answer": "I'm not joking",
+              "explanation": "Use present continuous for what's happening right now."
+            }
+          ]
+        },
+        {
+          "id": "u5_grammar_conditionals",
+          "unit": "Unit 5: Home and Away",
+          "title": "Zero and First Conditionals",
+          "instructions": "Choose the correct option.",
+          "questions": [
+            {
+              "id": "u5_g3_q1",
+              "question": "If she tidies the house, I'll ________ dinner.",
+              "type": "multiple-choice",
+              "options": [
+                "cook",
+                "cooks"
+              ],
+              "answer": "cook",
+              "explanation": "First conditional: If + present simple, will + base verb."
+            },
+            {
+              "id": "u5_g3_q2",
+              "question": "If your desk ________ organized, it'll be easier to study.",
+              "type": "multiple-choice",
+              "options": [
+                "is",
+                "be"
+              ],
+              "answer": "is",
+              "explanation": "First conditional uses present simple in the if-clause."
+            },
+            {
+              "id": "u5_g3_q3",
+              "question": "We'll complain if the air conditioning ________.",
+              "type": "multiple-choice",
+              "options": [
+                "doesn't work",
+                "not work"
+              ],
+              "answer": "doesn't work",
+              "explanation": "Use present simple (doesn't work) in the if-clause."
+            }
+          ]
+        },
+        {
+          "id": "u1_grammar_adverbs",
+          "unit": "Unit 1: All About Me",
+          "title": "Adverbs of Frequency",
+          "instructions": "Rewrite the sentences using the adverbs.",
+          "questions": [
+            {
+              "id": "u1_adv_q1",
+              "question": "I get up at 6 a.m. (every morning)",
+              "type": "fill-in",
+              "answer": "I get up at 6 a.m. every morning",
+              "explanation": "Place time expressions at the end of the sentence."
+            },
+            {
+              "id": "u1_adv_q2",
+              "question": "It's easy for me to make new friends. (usually)",
+              "type": "fill-in",
+              "answer": "It's usually easy for me to make new friends",
+              "explanation": "Usually comes before the main verb or after 'to be'."
+            },
+            {
+              "id": "u1_adv_q3",
+              "question": "Kevin goes to his chess club. (once a week)",
+              "type": "fill-in",
+              "answer": "Kevin goes to his chess club once a week",
+              "explanation": "Frequency expressions go at the end."
+            },
+            {
+              "id": "u1_adv_q4",
+              "question": "Lena goes to the gym. (a lot)",
+              "type": "fill-in",
+              "answer": "Lena goes to the gym a lot",
+              "explanation": "'A lot' goes at the end of the sentence."
+            },
+            {
+              "id": "u1_adv_q5",
+              "question": "I forget to do my homework. (rarely)",
+              "type": "fill-in",
+              "answer": "I rarely forget to do my homework",
+              "explanation": "Rarely comes before the main verb."
+            },
+            {
+              "id": "u1_adv_q6",
+              "question": "They are pleased to see me. (always)",
+              "type": "fill-in",
+              "answer": "They are always pleased to see me",
+              "explanation": "Always comes after 'to be'."
+            }
+          ]
+        },
+        {
+          "id": "u2_grammar_past",
+          "unit": "Unit 2: Memory",
+          "title": "Past Simple",
+          "instructions": "Write the past tense form of the verbs.",
+          "questions": [
+            {
+              "id": "u2_past_q1",
+              "question": "have →",
+              "type": "fill-in",
+              "answer": "had",
+              "explanation": "Irregular verb"
+            },
+            {
+              "id": "u2_past_q2",
+              "question": "study →",
+              "type": "fill-in",
+              "answer": "studied",
+              "explanation": "Regular verb: y → ied"
+            },
+            {
+              "id": "u2_past_q3",
+              "question": "hate →",
+              "type": "fill-in",
+              "answer": "hated",
+              "explanation": "Regular verb: add -d"
+            },
+            {
+              "id": "u2_past_q4",
+              "question": "forget →",
+              "type": "fill-in",
+              "answer": "forgot",
+              "explanation": "Irregular verb"
+            },
+            {
+              "id": "u2_past_q5",
+              "question": "plan →",
+              "type": "fill-in",
+              "answer": "planned",
+              "explanation": "Double the consonant + ed"
+            },
+            {
+              "id": "u2_past_q6",
+              "question": "relax →",
+              "type": "fill-in",
+              "answer": "relaxed",
+              "explanation": "Regular verb: add -ed"
+            },
+            {
+              "id": "u2_past_q7",
+              "question": "drink →",
+              "type": "fill-in",
+              "answer": "drank",
+              "explanation": "Irregular verb"
+            },
+            {
+              "id": "u2_past_q8",
+              "question": "take →",
+              "type": "fill-in",
+              "answer": "took",
+              "explanation": "Irregular verb"
+            }
+          ]
+        },
+        {
+          "id": "u3_grammar_past_cont",
+          "unit": "Unit 3: Food for Thought",
+          "title": "Past Simple and Past Continuous",
+          "instructions": "Choose the correct option.",
+          "questions": [
+            {
+              "id": "u3_pc_q1",
+              "question": "She didn't check her phone while she ________ breakfast.",
+              "type": "multiple-choice",
+              "options": [
+                "was eating",
+                "ate"
+              ],
+              "answer": "was eating",
+              "explanation": "Use past continuous for the longer background action."
+            },
+            {
+              "id": "u3_pc_q2",
+              "question": "Was she working as a chef when you both ________?",
+              "type": "multiple-choice",
+              "options": [
+                "met",
+                "were meeting"
+              ],
+              "answer": "met",
+              "explanation": "Use past simple for the shorter completed action."
+            },
+            {
+              "id": "u3_pc_q3",
+              "question": "They were running when they ________ her in the street.",
+              "type": "multiple-choice",
+              "options": [
+                "saw",
+                "were seeing"
+              ],
+              "answer": "saw",
+              "explanation": "Use past simple for the interrupting action."
+            }
+          ]
+        },
+        {
+          "id": "u3_grammar_pronouns",
+          "unit": "Unit 3: Food for Thought",
+          "title": "Indefinite Pronouns",
+          "instructions": "Choose the correct option.",
+          "questions": [
+            {
+              "id": "u3_ip_q1",
+              "question": "Did you buy ________ at the market?",
+              "type": "multiple-choice",
+              "options": [
+                "anything",
+                "nobody"
+              ],
+              "answer": "anything",
+              "explanation": "Use 'anything' in questions."
+            },
+            {
+              "id": "u3_ip_q2",
+              "question": "Would you like ________ to drink?",
+              "type": "multiple-choice",
+              "options": [
+                "something",
+                "somebody"
+              ],
+              "answer": "something",
+              "explanation": "Use 'something' in offers."
+            },
+            {
+              "id": "u3_ip_q3",
+              "question": "I want a big party with ________ there.",
+              "type": "multiple-choice",
+              "options": [
+                "everyone",
+                "nobody"
+              ],
+              "answer": "everyone",
+              "explanation": "'Everyone' means all people."
+            },
+            {
+              "id": "u3_ip_q4",
+              "question": "________ knew the answer to that question.",
+              "type": "multiple-choice",
+              "options": [
+                "Nobody",
+                "Anybody"
+              ],
+              "answer": "Nobody",
+              "explanation": "'Nobody' means no person."
+            }
+          ]
+        },
+        {
+          "id": "u4_grammar_future",
+          "unit": "Unit 4: Goals and Ambition",
+          "title": "Future Plans (going to & Present Continuous)",
+          "instructions": "Choose the best option.",
+          "questions": [
+            {
+              "id": "u4_fut_q1",
+              "question": "A: Do you have any plans for the summer?\nB: Yes, I've decided ________ my sister.",
+              "type": "multiple-choice",
+              "options": [
+                "I'm going to visit",
+                "I'm visiting"
+              ],
+              "answer": "I'm going to visit",
+              "explanation": "Use 'going to' for decisions already made."
+            },
+            {
+              "id": "u4_fut_q2",
+              "question": "He ________ to study at university next year.",
+              "type": "multiple-choice",
+              "options": [
+                "is going",
+                "'s going to study"
+              ],
+              "answer": "'s going to study",
+              "explanation": "Use 'going to' for future plans."
+            }
+          ]
+        },
+        {
+          "id": "u4_grammar_will",
+          "unit": "Unit 4: Goals and Ambition",
+          "title": "Will and Won't",
+          "instructions": "Complete with will/won't and the verbs.",
+          "questions": [
+            {
+              "id": "u4_will_q1",
+              "question": "B: I ________ some on the way home. (get)",
+              "type": "fill-in",
+              "answer": "'ll get",
+              "explanation": "Use 'will' for spontaneous decisions."
+            },
+            {
+              "id": "u4_will_q2",
+              "question": "B: OK. I ________ a look. (have)",
+              "type": "fill-in",
+              "answer": "'ll have",
+              "explanation": "Will + base form of verb."
+            },
+            {
+              "id": "u4_will_q3",
+              "question": "A: I ________ the fridge. (check)",
+              "type": "fill-in",
+              "answer": "'ll check",
+              "explanation": "Will for immediate future action."
+            },
+            {
+              "id": "u4_will_q4",
+              "question": "B: Don't worry. I ________! (not forget)",
+              "type": "fill-in",
+              "answer": "won't forget",
+              "explanation": "Won't = will not."
+            }
+          ]
+        },
+        {
+          "id": "u5_grammar_comp",
+          "unit": "Unit 5: Home and Away",
+          "title": "Comparatives and Superlatives",
+          "instructions": "Choose the correct option.",
+          "questions": [
+            {
+              "id": "u5_comp_q1",
+              "question": "This book is ________ than the film.",
+              "type": "multiple-choice",
+              "options": [
+                "more interesting",
+                "interestinger",
+                "most interesting"
+              ],
+              "answer": "more interesting",
+              "explanation": "Long adjectives use 'more' for comparative."
+            },
+            {
+              "id": "u5_comp_q2",
+              "question": "She's ________ student in the class.",
+              "type": "multiple-choice",
+              "options": [
+                "the best",
+                "better",
+                "good"
+              ],
+              "answer": "the best",
+              "explanation": "Use superlative 'the best' for the highest degree."
+            },
+            {
+              "id": "u5_comp_q3",
+              "question": "This flat is ________ than our old house.",
+              "type": "multiple-choice",
+              "options": [
+                "more expensive",
+                "expensiver",
+                "most expensive"
+              ],
+              "answer": "more expensive",
+              "explanation": "Long adjectives use 'more' for comparative."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "name": "Vocabulary (Từ vựng)",
+      "icon": "💬",
+      "description": "Word definitions, topics, and usage",
+      "color": "#10B981",
+      "questionGroups": [
+        {
+          "id": "u1_vocab_personality",
+          "unit": "Unit 1: All About Me",
+          "title": "Personality Adjectives",
+          "questions": [
+            {
+              "id": "u1_v1_q1",
+              "question": "A person who you can trust is ________.",
+              "type": "multiple-choice",
+              "options": [
+                "reliable",
+                "creative",
+                "patient",
+                "honest"
+              ],
+              "answer": "reliable",
+              "explanation": "Reliable means someone you can trust and depend on."
+            },
+            {
+              "id": "u1_v1_q2",
+              "question": "A person who doesn't smile or laugh a lot is ________.",
+              "type": "multiple-choice",
+              "options": [
+                "serious",
+                "friendly",
+                "confident",
+                "patient"
+              ],
+              "answer": "serious",
+              "explanation": "Serious people are often more formal and less playful."
+            },
+            {
+              "id": "u1_v1_q3",
+              "question": "A person who believes in themselves is ________.",
+              "type": "multiple-choice",
+              "options": [
+                "confident",
+                "honest",
+                "creative",
+                "friendly"
+              ],
+              "answer": "confident",
+              "explanation": "Confident means having belief in your own abilities."
+            }
+          ]
+        },
+        {
+          "id": "u5_vocab_extreme",
+          "unit": "Unit 5: Home and Away",
+          "title": "Extreme Adjectives",
+          "instructions": "Look at the images and complete the phrases with the correct extreme adjective.",
+          "hasImages": true,
+          "questions": [
+            {
+              "id": "u5_v1_q1",
+              "question": "a(n) ________ sunset",
+              "type": "fill-in",
+              "hasImage": true,
+              "imagePath": "assets/14/14-1.png",
+              "answer": "spectacular",
+              "explanation": "Spectacular means extremely beautiful or impressive."
+            },
+            {
+              "id": "u5_v1_q2",
+              "question": "a(n) ________ view",
+              "type": "fill-in",
+              "hasImage": true,
+              "imagePath": "assets/14/14-2.png",
+              "answer": "awful",
+              "explanation": "Awful means very bad or unpleasant."
+            },
+            {
+              "id": "u5_v1_q3",
+              "question": "a(n) ________ floor",
+              "type": "fill-in",
+              "hasImage": true,
+              "imagePath": "assets/14/14-3.png",
+              "answer": "filthy",
+              "explanation": "Filthy means extremely dirty."
+            },
+            {
+              "id": "u5_v1_q4",
+              "question": "a(n) ________ window",
+              "type": "fill-in",
+              "hasImage": true,
+              "imagePath": "assets/14/14-4.png",
+              "answer": "tiny",
+              "explanation": "Tiny means extremely small."
+            },
+            {
+              "id": "u5_v1_q5",
+              "question": "a(n) ________ room",
+              "type": "fill-in",
+              "hasImage": true,
+              "imagePath": "assets/14/14-5.png",
+              "answer": "freezing",
+              "explanation": "Freezing means extremely cold."
+            },
+            {
+              "id": "u5_v1_q6",
+              "question": "a(n) ________ smell",
+              "type": "fill-in",
+              "hasImage": true,
+              "imagePath": "assets/14/14-6.png",
+              "answer": "disgusting",
+              "explanation": "Disgusting means extremely unpleasant or offensive."
+            }
+          ]
+        },
+        {
+          "id": "u2_vocab_subjects",
+          "unit": "Unit 2: Memory",
+          "title": "School Subjects",
+          "questions": [
+            {
+              "id": "u2_sub_q1",
+              "question": "I'm terrible at ________. I have to use my phone to add most bills.",
+              "type": "multiple-choice",
+              "options": [
+                "maths",
+                "geography",
+                "history"
+              ],
+              "answer": "maths",
+              "explanation": "Maths involves calculations and numbers."
+            },
+            {
+              "id": "u2_sub_q2",
+              "question": "I'd love to join ________ club. I think I'm a good actor!",
+              "type": "multiple-choice",
+              "options": [
+                "an art",
+                "a drama",
+                "a PE"
+              ],
+              "answer": "a drama",
+              "explanation": "Drama club is for acting."
+            },
+            {
+              "id": "u2_sub_q3",
+              "question": "I'm good at ________ because I travelled a lot as a child.",
+              "type": "multiple-choice",
+              "options": [
+                "geography",
+                "history",
+                "chemistry"
+              ],
+              "answer": "geography",
+              "explanation": "Geography is about places around the world."
+            }
+          ]
+        },
+        {
+          "id": "u3_vocab_food",
+          "unit": "Unit 3: Food for Thought",
+          "title": "Food Vocabulary",
+          "questions": [
+            {
+              "id": "u3_food_q1",
+              "question": "This cake is ________. I love the cream on the top.",
+              "type": "multiple-choice",
+              "options": [
+                "delicious",
+                "vegan",
+                "raw"
+              ],
+              "answer": "delicious",
+              "explanation": "Delicious means very tasty."
+            },
+            {
+              "id": "u3_food_q2",
+              "question": "Do you have any ________? Maybe to peanuts, eggs or seafood?",
+              "type": "multiple-choice",
+              "options": [
+                "allergies",
+                "dishes",
+                "recipes"
+              ],
+              "answer": "allergies",
+              "explanation": "Allergies are bad reactions to certain foods."
+            },
+            {
+              "id": "u3_food_q3",
+              "question": "The restaurant ________ amazing pasta dishes.",
+              "type": "multiple-choice",
+              "options": [
+                "serves",
+                "prepares",
+                "cooks"
+              ],
+              "answer": "serves",
+              "explanation": "Restaurants 'serve' food to customers."
+            }
+          ]
+        },
+        {
+          "id": "u4_vocab_motivation",
+          "unit": "Unit 4: Goals and Ambition",
+          "title": "Motivation Words",
+          "questions": [
+            {
+              "id": "u4_mot_q1",
+              "question": "The teacher gave me ________ for my good work.",
+              "type": "multiple-choice",
+              "options": [
+                "praise",
+                "punishment",
+                "challenge"
+              ],
+              "answer": "praise",
+              "explanation": "Praise means positive feedback."
+            },
+            {
+              "id": "u4_mot_q2",
+              "question": "My parents always ________ me to try new things.",
+              "type": "multiple-choice",
+              "options": [
+                "encourage",
+                "punish",
+                "reward"
+              ],
+              "answer": "encourage",
+              "explanation": "Encourage means to give support and confidence."
+            },
+            {
+              "id": "u4_mot_q3",
+              "question": "She won first ________ in the competition.",
+              "type": "multiple-choice",
+              "options": [
+                "prize",
+                "reward",
+                "purpose"
+              ],
+              "answer": "prize",
+              "explanation": "A prize is an award for winning."
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
